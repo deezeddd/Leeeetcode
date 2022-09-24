@@ -6,9 +6,7 @@ public:
                 swap(mat[i][j],mat[j][i]);
             }
         }
-        for(int i = 0; i < n ;i++ ){
-            reverse(mat[i].begin(),mat[i].end());
-        }
+       
         
     }
     
@@ -16,5 +14,8 @@ public:
         int n = mat.size();
         int m = mat[0].size();
         f(mat,n,m);
+         for(int i = 0; i < n ;i++ ){
+            reverse(mat[i].begin(),mat[i].end());
+        }
     }
 };
